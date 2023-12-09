@@ -75,6 +75,7 @@ p {
   text-align: end;
   font-size: 35px;
   padding-right: 10px;
+  border-right: 5px solid black;
 }
 
 .workHeading {
@@ -82,6 +83,7 @@ p {
   text-align: end;
   font-size: 35px;
   padding-right: 10px;
+  border-right: 5px solid black;
 }
 
 .contactMeHeading {
@@ -89,6 +91,7 @@ p {
   text-align: end;
   font-size: 35px;
   padding-right: 10px;
+  border-right: 5px solid black;
 }
 
 .horiseon {
