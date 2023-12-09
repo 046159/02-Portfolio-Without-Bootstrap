@@ -44,12 +44,13 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 15% 75%;
+  grid-template-rows: 100px 100px 400px 100px;
+  grid-template-columns: 20% 40% 40%;
   grid-template-areas:
-    'hero-banner hero-banner'
-    'aboutMeHeading aboutMeText'
-    'workHeading workHeadingText'
-    'contactMeHeading contactMeText';
+    'hero-banner hero-banner hero-banner'
+    'aboutMeHeading aboutMeText aboutMeText'
+    'workHeading workText workText'
+    'contactMeHeading contactMeText contactMeText';
   gap: 10px;
   background-color: white;
   padding: 10px;
@@ -85,6 +86,22 @@ p {
   font-size: 35px;
   padding-right: 10px;
 }
+
+.workText {
+ grid-area: workText; 
+ background-image: url(./Horiseon.png);
+ height: 100%;
+ background-size: cover;
+}
+
+.contactMeText {
+  grid-area: contactMeText; 
+  text-align: center;
+ }
+
+ .aboutMeText {
+  grid-area: aboutMeText; 
+ }
 
 /* Format h1 */
 h1 {
