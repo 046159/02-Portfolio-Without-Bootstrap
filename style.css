@@ -42,6 +42,50 @@ p {
   color: black;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 15% 75%;
+  grid-template-areas:
+    'hero-banner hero-banner'
+    'aboutMeHeading aboutMeText'
+    'workHeading workHeadingText'
+    'contactMeHeading contactMeText';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.hero-banner {
+  grid-area: hero-banner;
+  background-image: url(./wood.jpg);
+  height: 100%;
+  background-size: cover;
+}
+
+.aboutMeHeading {
+  grid-area: aboutMeHeading;
+  text-align: end;
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.workHeading {
+  grid-area: workHeading;
+  text-align: end;
+  font-size: 35px;
+  padding-right: 10px;
+}
+
+.contactMeHeading {
+  grid-area: contactMeHeading;
+  text-align: end;
+  font-size: 35px;
+  padding-right: 10px;
+}
+
 /* Format h1 */
 h1 {
   display: inline-block;
