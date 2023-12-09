@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -25,7 +26,8 @@ p {
 /* Format class .header */
 .header {
   padding: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: gray;
   color: #ffffff;
 }
@@ -34,7 +36,7 @@ p {
 .header div {
   margin-right: 20px;
   float: right;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
 
@@ -44,13 +46,14 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-rows: 100px 100px 400px 100px;
+  grid-template-rows: 100px 100px 400px 100px 100px;
   grid-template-columns: 20% 40% 40%;
   grid-template-areas:
-    'hero-banner hero-banner hero-banner'
-    'aboutMeHeading aboutMeText aboutMeText'
-    'workHeading workText workText'
-    'contactMeHeading contactMeText contactMeText';
+    "hero-banner hero-banner hero-banner"
+    "aboutMeHeading aboutMeText aboutMeText"
+    "workHeading horiseon horiseon"
+    "workHeading portfolio1 portfolio2"
+    "contactMeHeading contactMeText contactMeText";
   gap: 10px;
   background-color: white;
   padding: 10px;
@@ -60,6 +63,7 @@ p {
 }
 
 .hero-banner {
+  position: relative;
   grid-area: hero-banner;
   background-image: url(./wood.jpg);
   height: 100%;
@@ -87,21 +91,72 @@ p {
   padding-right: 10px;
 }
 
-.workText {
- grid-area: workText; 
- background-image: url(./Horiseon.png);
- height: 100%;
- background-size: cover;
+.horiseon {
+  position: relative;
+  grid-area: horiseon;
+  background-image: url(./Horiseon.png);
+  height: 100%;
+  background-size: cover;
+}
+
+.horiseon-title, .portfolio1-title, .portfolio2-title {
+  display: flex;
+  position: absolute;
+  flex-flow: wrap;
+  color: white;
+  background-color: black;
+  bottom: 5px;
+  left: 0px;
+  background-color: cyan;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.portfolio1 {
+  position: relative;
+  grid-area: portfolio1;
+  background-image: url(./portfolio1.jpg);
+  height: 100%;
+  background-size: cover;
+}
+
+.portfolio2 {
+  position: relative;
+  grid-area: portfolio2;
+  background-image: url(./portfolio2.jpg);
+  height: 100%;
+  background-size: cover;
 }
 
 .contactMeText {
-  grid-area: contactMeText; 
+  grid-area: contactMeText;
   text-align: center;
- }
+}
 
- .aboutMeText {
-  grid-area: aboutMeText; 
- }
+.aboutMeText {
+  grid-area: aboutMeText;
+}
+
+.flex-container {
+  display: flex;
+  position: absolute;
+  top: 51px;
+  right: 63px;
+  background-color: brown;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+break {
+  flex-basis: 100%;
+  width: 0px; 
+  height: 0px; 
+  overflow: hidden;
+}
 
 /* Format h1 */
 h1 {
