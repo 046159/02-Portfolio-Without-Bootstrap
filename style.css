@@ -1,6 +1,7 @@
 /* Global */
 * {
   box-sizing: border-box;
+  padding: 5px;
 }
 
 /* Format body */
@@ -159,6 +160,11 @@ p {
 /* Format About Me text */
 .aboutMeText {
   grid-area: aboutMeText;
+}
+
+.contactMeText a, nav a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Format the flex container */
