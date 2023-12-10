@@ -1,7 +1,9 @@
+/* Global */
 * {
   box-sizing: border-box;
 }
 
+/* Format body */
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ body {
   line-height: 1.5;
 }
 
+/* Format h1 to h6 */
 h1,
 h2,
 h3,
@@ -19,6 +22,7 @@ h6 {
   margin: 0;
 }
 
+/* Format paragraph */
 p {
   margin: 0;
 }
@@ -40,10 +44,12 @@ p {
   font-size: 20px;
 }
 
+/* Format anchor link in class: header */
 .header a {
   color: black;
 }
 
+/* Format the grid container */
 .grid-container {
   display: grid;
   grid-template-rows: 100px 100px 525px 100px 100px;
@@ -62,6 +68,7 @@ p {
   padding-right: 0px;
 }
 
+/* Format the hero banner class */
 .hero-banner {
   position: relative;
   grid-area: hero-banner;
@@ -70,6 +77,7 @@ p {
   background-size: cover;
 }
 
+/* Format About Me heading */
 .aboutMeHeading {
   grid-area: aboutMeHeading;
   text-align: end;
@@ -78,6 +86,7 @@ p {
   border-right: 5px solid black;
 }
 
+/* Format Work heading */
 .workHeading {
   grid-area: workHeading;
   text-align: end;
@@ -86,6 +95,7 @@ p {
   border-right: 5px solid black;
 }
 
+/* Format Contact Me heading */
 .contactMeHeading {
   grid-area: contactMeHeading;
   text-align: end;
@@ -94,6 +104,7 @@ p {
   border-right: 5px solid black;
 }
 
+/* Format Horiseon grid */
 .horiseon {
   position: relative;
   grid-area: horiseon;
@@ -101,6 +112,7 @@ p {
   border: 5px solid turquoise;
 }
 
+/* Format title for Horiseon and 2 other placeholders for portfolio */
 .horiseon-title,
 .portfolio1-title,
 .portfolio2-title {
@@ -118,6 +130,7 @@ p {
   padding-right: 5px;
 }
 
+/* Format portfolio1 placeholder */
 .portfolio1 {
   position: relative;
   grid-area: portfolio1;
@@ -127,6 +140,7 @@ p {
   border: 5px solid turquoise;
 }
 
+/* Format portfolio2 placeholder */
 .portfolio2 {
   position: relative;
   grid-area: portfolio2;
@@ -136,15 +150,18 @@ p {
   border: 5px solid turquoise;
 }
 
+/* Format Contact Me text */
 .contactMeText {
   grid-area: contactMeText;
   text-align: center;
 }
 
+/* Format About Me text */
 .aboutMeText {
   grid-area: aboutMeText;
 }
 
+/* Format the flex container */
 .flex-container {
   display: flex;
   position: absolute;
@@ -157,6 +174,7 @@ p {
   padding-right: 5px;
 }
 
+/* Format break */
 break {
   flex-basis: 100%;
   width: 0px;
