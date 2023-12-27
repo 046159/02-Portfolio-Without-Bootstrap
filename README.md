@@ -4,7 +4,7 @@
 
 This project was about developing a personal portfolio website based on an example provided and to link to exiting portfolio where available.
 
-The URL for the application is: https://046159.github.io/challenge2/
+The URL for the application is: https://046159.github.io/02-Portfolio-Without-Bootstrap/
 
 ## Usage 
 
